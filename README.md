@@ -14,7 +14,7 @@ This project is about creating a clone from apple company website from 2014. The
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://canriquez.github.io/backgrounds-gradients/)
 
 ## Getting Started
 
