@@ -1,6 +1,6 @@
 # Project Name
 
-> One paragraph statement about the project.
+> Recreation of the 2014 apple webpage working with background, gradient and flex positioning.
 
 ![screenshot](./app_screenshot.png)
 
