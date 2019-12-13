@@ -490,7 +490,7 @@ aside ul li {
   display: block;
   height: 200px;
   background-color: transparent;
-  background-image: url(/assets/img/iphone5S.jpg);
+  background-image: url(../img/iphone5S.jpg);
   background-position: -52px 0;
 }
 
@@ -498,7 +498,7 @@ aside ul li {
   display: block;
   height: 200px;
   background-color: transparent;
-  background-image: url(/assets/img/iphone5C.jpg);
+  background-image: url(../img/iphone5C.jpg);
   background-position: -52px 0;
 }
 
@@ -506,7 +506,7 @@ aside ul li {
   display: block;
   height: 200px;
   background-color: transparent;
-  background-image: url(/assets/img/happybirthday.jpg);
+  background-image: url(../img/happybirthday.jpg);
   background-position: -52px 0;
 }
 
@@ -514,7 +514,7 @@ aside ul li {
   display: block;
   height: 200px;
   background-color: transparent;
-  background-image: url(/assets/img/supplier.jpg);
+  background-image: url(../img/supplier.jpg);
   background-position: -52px 0;
 }
 
