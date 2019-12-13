@@ -183,11 +183,15 @@ body {
   margin-bottom: 19px;
 }
 
+/* ======================================================
+                    Nav-bar
+=========================================================*/
+
 .nav-bar {
-  width: 940px;
+  width: 980px;
   margin-top: 0px;
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -212,7 +216,7 @@ body {
 }
 
 .nav-bar ul li {
-  flex-basis: 102.56px;
+  flex-basis: 106px; /* This defines the size for each menu element */
 }
 .nav-bar ul li {
   text-decoration: none;
@@ -314,4 +318,79 @@ body {
 
 .main-area {
   background-color: blueviolet;
+}
+
+/* ======================================================
+                    search box
+=========================================================*/
+
+.search-menu {
+  background-color: transparent;
+  padding: 8px 13px;
+  z-index: 9999;
+  flex-basis: 109px; /* This size has to be in sinc with nab-var total width */
+}
+
+.search-menu form {
+  display: block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.0976562);
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-shadow: rgba(0, 0, 0, 0.597656) 0px 2px 1px inset,
+    rgba(255, 255, 255, 0.199219) 0px 1px 0px;
+  z-index: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px -1px 0px,
+    rgba(255, 255, 255, 0.199219) 0px 1px 0px;
+
+  border-width: 0px;
+  border-style: none;
+  margin: 1px 0px 0px;
+  padding: 0px;
+  border-color: white;
+}
+
+.search-menu form input {
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  height: 19px;
+  background-image: none;
+
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-sizing: border-box; /* Helps keeping search box within navbar with no overflow */
+
+  margin: 0px 0px -1px;
+  padding: 2px 18px 1px 22px;
+  border: 0px;
+  border-width: 0px;
+  border-color: #fff;
+
+  cursor: text;
+  font: 400 11px system-ui;
+}
+.magnifier-box {
+  position: absolute;
+}
+
+.magnifier-box span {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI+Cgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c+CjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8+Cgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  bottom: 2px;
+  left: 5px;
 }
