@@ -180,7 +180,7 @@ body {
   background-color: transparent;
   width: 1024px;
   height: 65px;
-  margin-bottom: 19px;
+  margin-bottom: 83px;
 }
 
 /* ======================================================
@@ -195,6 +195,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  /* First attempt at linear nav-bar gradient */
   background-image: linear-gradient(
     rgb(120, 124, 120),
     rgb(83, 83, 83),
@@ -316,10 +317,6 @@ body {
   margin: 3px auto;
 }
 
-.main-area {
-  background-color: blueviolet;
-}
-
 /* ======================================================
                     search box
 =========================================================*/
@@ -393,4 +390,65 @@ body {
   text-align: left;
   bottom: 2px;
   left: 5px;
+}
+
+/* ======================================================
+                    Header
+=========================================================*/
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  margin: 28px 0px 0px; /* Margin top here adjusts text distance from navbar */
+  padding: 0px 0px;
+}
+
+header h1 {
+  margin: 0px 0px -9px;
+  padding: 0px;
+}
+
+header h1 a img {
+  height: 104px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0px;
+  border-style: none;
+  border-color: white;
+}
+
+header h2 {
+  margin: 0px 0px 27px;
+  padding: 0px;
+}
+
+header h2 a img {
+  height: 82px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0px;
+  border-style: none;
+  border-color: white;
+}
+
+header div {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 31px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+header div img {
+  height: 64px;
+  width: 980px;
 }
