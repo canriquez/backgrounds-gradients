@@ -178,7 +178,7 @@ body {
   height: 538px;
   margin: 0 auto;
   z-index: 1;
-  background-image: url(/assets/img/couple-mountain.jpg);
+  background-image: url(../img/couple-mountain.jpg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
@@ -248,7 +248,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% 0;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -259,7 +259,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -30px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -270,7 +270,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -60px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -281,7 +281,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -90px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -292,7 +292,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -120px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -303,7 +303,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -150px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -314,7 +314,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -180px;
   background-repeat: no-repeat;
   margin: 3px auto;
@@ -325,7 +325,7 @@ body {
   width: 100%;
   height: 30px;
   background-color: transparent;
-  background-image: url(/assets/img/navbar.png);
+  background-image: url(../img/navbar.png);
   background-position: 50% -210px;
   background-repeat: no-repeat;
   margin: 3px auto;
