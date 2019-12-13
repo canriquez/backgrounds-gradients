@@ -1,4 +1,4 @@
-# Project Name
+# Backgrounds and gradients
 
 > Recreation of the 2014 apple webpage working with background, gradient and flex positioning.
 
