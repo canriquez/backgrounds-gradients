@@ -10,6 +10,7 @@ module.exports = {
         ignore: ["after-comment"]
       }
     ],
+    "no-descending-specificity": null,
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
@@ -105,5 +106,12 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0
-  }
+  },
+  ignoreFiles: [
+    "node_modules/**",
+    "assets/img/**",
+    "**/*.json",
+    "**/*.svg",
+    "**/*.png"
+  ]
 };
