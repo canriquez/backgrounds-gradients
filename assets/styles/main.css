@@ -1,0 +1,591 @@
+/*
+http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/*
+HTML5 display-role reset for older browsers
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ======================================================
+                            App
+========================================================= */
+
+body {
+  min-width: 1024px;
+  max-height: 1472px;
+  position: relative;
+  font:
+    normal normal normal 12px/18px "Lucida Grande",
+    "Lucida Sans Unicode",
+    Helvetica,
+    Arial,
+    Verdana,
+    sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+/* ======================================================
+                            Icons
+========================================================= */
+
+.magnifier-img {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  z-index: 0;
+  opacity: 0;
+  background-color: red; /* change to transparent before finishing */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGc+Cgk8cG9seWdvbiBmaWxsPSIjNjY2IiBwb2ludHM9IjkuMjA3LDYuMTI2IDcuNzkzLDcuNTQxIDExLjc5MywxMS41NDEgMTMuMjA3LDEwLjEyNiIgLz4KCTxwYXRoIGZpbGw9IiM2NjYiIGQ9Ik01LjkxNywyYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsNy44MzMsNS45MTcsNy44MzNTMyw2LjUyNSwzLDQuOTE3UzQuMzA4LDIsNS45MTcsMgoJCSBNNS45MTcsMEMzLjIwMSwwLDEsMi4yMDEsMSw0LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMi4yMDEsOC42MzIsMCw1LjkxNywwTDUuOTE3LDB6IiAvPgo8L2c+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================================================
+                    Main content
+========================================================= */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 1024px;
+  height: 538px;
+  margin: 0 auto;
+  z-index: 1;
+  background-image: url(../img/couple-mountain.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.place-holder {
+  display: block;
+  background-color: transparent;
+  width: 1024px;
+  height: 65px;
+  margin-bottom: 83px;
+}
+
+/* ======================================================
+                    Nav-bar
+========================================================= */
+
+.nav-bar {
+  width: 980px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  /* linear nav-bar gradient */
+  background:
+    linear-gradient(
+      to bottom,
+      rgb(119, 124, 120) 5%,
+      rgb(105, 105, 105) 11%,
+      rgb(100, 100, 100) 50%,
+      rgb(82, 82, 82) 51%,
+      rgb(100, 105, 101) 100%
+    );
+  border-top-left-radius: 4px 4px;
+  border-top-right-radius: 4px 4px;
+  border-bottom-right-radius: 4px 4px;
+  border-bottom-left-radius: 4px 4px;
+}
+
+.nav-bar ul {
+  background-color: transparent;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 845px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar ul li {
+  /* This defines the size for each menu element */
+  flex-basis: 106px;
+  text-decoration: none;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: rgb(68, 68, 68);
+  z-index: 9999;
+}
+
+/* ======================================================
+                    nav-bar icons
+========================================================= */
+
+.nav-logo a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-store a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -30px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-mac a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -60px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-ipod a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -90px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-iphone a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -120px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-ipad a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -150px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-itunes a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -180px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-support a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../img/navbar.png);
+  background-position: 50% -210px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+/* ======================================================
+                    search box
+========================================================= */
+
+.search-menu {
+  background-color: transparent;
+  padding: 8px 13px;
+  z-index: 9999;
+
+  /* This size has to be in sinc with nab-var total width */
+  flex-basis: 109px;
+}
+
+.search-menu form {
+  display: block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.0976562);
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.597656) 0 2px 1px inset,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  z-index: 0;
+  -webkit-box-shadow:
+    rgba(0, 0, 0, 0.398438) 0 -1px 0,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  border-width: 0;
+  border-style: none;
+  margin: 1px 0 0;
+  padding: 0;
+  border-color: white;
+}
+
+.search-menu form input {
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  height: 19px;
+  background-image: none;
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+
+  /* Helps keeping search box within navbar with no overflow */
+  box-sizing: border-box;
+  margin: 0 0 -1px;
+  padding: 2px 18px 1px 22px;
+  border: 0;
+  border-width: 0;
+  border-color: #fff;
+  cursor: text;
+  font: 400 11px system-ui;
+}
+
+.magnifier-box {
+  position: absolute;
+}
+
+.magnifier-box span {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI+Cgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c+CjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8+Cgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  bottom: 2px;
+  left: 5px;
+}
+
+/* ======================================================
+                    Header
+========================================================= */
+
+.header-text {
+  /* Margin top here adjusts text distance from navbar */
+  margin: 28px 0 0;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 0 0 -9px;
+  padding: 0;
+}
+
+header h1 a img {
+  height: 104px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header h2 {
+  margin: 0 0 27px;
+  padding: 0;
+}
+
+header h2 a img {
+  height: 82px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header div {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 31px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header div img {
+  height: 64px;
+  width: 980px;
+}
+
+/* ======================================================
+                    Aside
+========================================================= */
+
+aside {
+  margin-top: 157px;
+}
+
+aside ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside ul li {
+  flex-basis: 24.85%;
+}
+
+.iphone5s a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/iphone5S.jpg);
+  background-position: -52px 0;
+}
+
+.iphone5c a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/iphone5C.jpg);
+  background-position: -52px 0;
+}
+
+.happy a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/happybirthday.jpg);
+  background-position: -52px 0;
+}
+
+.supplier a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/supplier.jpg);
+  background-position: -52px 0;
+}
+
+/* ======================================================
+                    Footer
+========================================================= */
+
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  display: flex;
+  text-align: left;
+  margin: 0;
+  padding: 1.5em 0 0;
+  color: rgb(110, 110, 110);
+  font-size: 0.8334em;
+  line-height: 1.2;
+}
+
+.footer-content div {
+  flex-basis: 50%;
+}
+
+.footer-content ul {
+  flex-basis: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content ul li a,
+.footer-content div a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+  align-content: center;
+}
+
+.shop-text a {
+  padding: 0 4px;
+}
+
+#flag {
+  position: absolute;
+  top: 12px;
+  left: 968px;
+}
+
+.footer-menu li {
+  border-color: rgb(204, 204, 204);
+  border-width: medium 1px medium medium;
+  border-style: none solid none none;
+  padding-right: 6px;
+}
+
+.footer-text ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#privacy {
+  border-left-color: rgb(204, 204, 204);
+  border-width: medium medium medium 1px;
+  border-style: none none none solid;
+  margin: 0 0 0 0.6em;
+  padding: 0 0 0 0.6em;
+}

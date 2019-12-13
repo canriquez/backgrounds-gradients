@@ -1,57 +1,36 @@
-# Project Name
+# Backgrounds and gradients
 
-> One paragraph statement about the project.
+> Recreation of the 2014 apple webpage working with background, gradient and flex positioning.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+This project is about creating a clone from apple company website from 2014. The project required the usage of background image management, positioning, as well as gradients to re-create the apple webpage's nab-var.
+
+[Orignal page link](http://archive.md/UW4oR)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5, CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://canriquez.github.io/backgrounds-gradients/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### No prerequisites required
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+### Clone/fork the repository
 
 ## Authors
 
 👤 **Author1**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@canriquez](https://github.com/canriquez)
+- Twitter: [@cranriquez](https://twitter.com/cranriquez)
+- Linkedin: [linkedin](https://www.linkedin.com/in/carlosanriquez/)
 
 ## 🤝 Contributing
 
@@ -65,9 +44,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks for the help from Ivan, Nurislam for working with me in previous projects
+- Thanks for my great standup team the-corgis
+- Microverse team!
 
 ## 📝 License
 
