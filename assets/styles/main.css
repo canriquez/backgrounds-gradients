@@ -505,6 +505,72 @@ aside ul li {
                     Footer
 =========================================================*/
 
-footer {
-  display: block;
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.footer-text {
+  text-align: left;
+  margin: 0px;
+  padding: 1.5em 0px 0px;
+
+  color: rgb(110, 110, 110);
+  font-size: 0.8334em;
+  line-height: 1.2;
+}
+
+.footer-content div {
+  flex-basis: 50%;
+}
+.footer-content ul {
+  flex-basis: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content ul li a,
+.footer-content div a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+  align-content: center;
+}
+
+.shop-text a {
+  padding: 0 4px;
+}
+
+#flag {
+  position: absolute;
+  top: 12px;
+  left: 968px;
+}
+
+.footer-menu li {
+  border-color: rgb(204, 204, 204);
+  border-width: medium 1px medium medium;
+  border-style: none solid none none;
+  padding-right: 6px;
+}
+
+.footer-text {
+  display: flex;
+}
+
+.footer-text ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#privacy {
+  border-left-color: rgb(204, 204, 204);
+  border-width: medium medium medium 1px;
+  border-style: none none none solid;
+  margin: 0px 0px 0px 0.6em;
+  padding: 0px 0px 0px 0.6em;
 }
