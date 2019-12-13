@@ -452,3 +452,59 @@ header div img {
   height: 64px;
   width: 980px;
 }
+
+/* ======================================================
+                    Aside
+=========================================================*/
+
+aside {
+  margin-top: 157px;
+}
+
+aside ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside ul li {
+  flex-basis: 24.85%;
+}
+
+.iphone5s a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(/assets/img/iphone5S.jpg);
+  background-position: -52px 0;
+}
+.iphone5c a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(/assets/img/iphone5C.jpg);
+  background-position: -52px 0;
+}
+
+.happy a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(/assets/img/happybirthday.jpg);
+  background-position: -52px 0;
+}
+
+.supplier a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(/assets/img/supplier.jpg);
+  background-position: -52px 0;
+}
+
+/* ======================================================
+                    Footer
+=========================================================*/
+
+footer {
+  display: block;
+}
