@@ -132,8 +132,8 @@ table {
 =========================================================*/
 
 body {
-  min-width: 1024;
-  max-height: 1472;
+  min-width: 1024px;
+  max-height: 1472px;
   position: relative;
 
   font: normal normal normal 12px/18px "Lucida Grande", "Lucida Sans Unicode",
@@ -165,7 +165,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   width: 1024px;
   height: 538px;
   margin: 0 auto;
@@ -195,12 +195,16 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* First attempt at linear nav-bar gradient */
-  background-image: linear-gradient(
-    rgb(120, 124, 120),
-    rgb(83, 83, 83),
-    rgb(101, 106, 102)
+  /* linear nav-bar gradient */
+  background: linear-gradient(
+    to bottom,
+    rgb(119, 124, 120) 5%,
+    rgb(105, 105, 105) 11%,
+    rgb(100, 100, 100) 50%,
+    rgb(82, 82, 82) 51%,
+    rgb(100, 105, 101) 100%
   );
+
   border-top-left-radius: 4px 4px;
   border-top-right-radius: 4px 4px;
   border-bottom-right-radius: 4px 4px;
@@ -217,7 +221,8 @@ body {
 }
 
 .nav-bar ul li {
-  flex-basis: 106px; /* This defines the size for each menu element */
+  /* This defines the size for each menu element */
+  flex-basis: 106px;
 }
 .nav-bar ul li {
   text-decoration: none;
@@ -325,7 +330,8 @@ body {
   background-color: transparent;
   padding: 8px 13px;
   z-index: 9999;
-  flex-basis: 109px; /* This size has to be in sinc with nab-var total width */
+  /* This size has to be in sinc with nab-var total width */
+  flex-basis: 109px;
 }
 
 .search-menu form {
@@ -363,7 +369,8 @@ body {
   border-top-right-radius: 12px 12px;
   border-bottom-right-radius: 12px 12px;
   border-bottom-left-radius: 12px 12px;
-  box-sizing: border-box; /* Helps keeping search box within navbar with no overflow */
+  /* Helps keeping search box within navbar with no overflow */
+  box-sizing: border-box;
 
   margin: 0px 0px -1px;
   padding: 2px 18px 1px 22px;
@@ -401,7 +408,8 @@ body {
 }
 
 .header-text {
-  margin: 28px 0px 0px; /* Margin top here adjusts text distance from navbar */
+  /* Margin top here adjusts text distance from navbar */
+  margin: 28px 0px 0px;
   padding: 0px 0px;
 }
 
